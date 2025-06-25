@@ -67,6 +67,12 @@
                     }
                 });
             });
+            // 서비스 개요 토글
+            $('.btn-sys-set-open').on('click', function(e) {
+                e.preventDefault();
+                $(this).toggleClass('on');
+                $(this).closest('.uni-sys-tool').find('.uni-sys-setting').toggleClass('on');
+            });
         });
 
         // Slick Slider
@@ -324,7 +330,7 @@
                     <div class="service-overview">
                         <div class="overview-box overview-employee">
                             <h3>
-                                <p>임직원 스마트 근무여정 핵심도구</p>
+                                <p>임직원 서비스 지원 협업툴</p>
                                 <ul>
                                     <li><a href="/portal/unicloud/introduction/portalPesIntroduction">경비처리</a></li>
                                     <li><a href="/portal/unicloud/introduction/portalAvsIntroduction">인사관리</a></li>
@@ -480,14 +486,14 @@
                         </div>
                         <div class="overview-box overview-partner">
                             <h3>
-                                <p>비즈니스 파트너 협력지원 협업도구</p>
+                                <p>비즈니스 파트너 협력 지원 협업툴</p>
                                 <ul>
                                     <li><a href="/portal/unicloud/introduction/portalEconIntroduction">전자계약</a></li>
                                     <li><a href="/portal/unicloud/introduction/portalTaxIntroduction">세금계산서</a></li>
                                 </ul>
                             </h3>
                             <div class="img-area">
-                                <img src="./images/img-saas-overview-network.png" alt="비즈니스 파트너 협력지원 협업도구 설명 이미지"/>
+                                <img src="./images/img-saas-overview-network.png" alt="비즈니스 파트너 협력 지원 협업툴 설명 이미지"/>
                             </div>
                             <div class="category-box finance">
                                 <p class="box-tt">구매 · 회계 담당자</p>
@@ -521,6 +527,51 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- 작업중 -->
+                    <!-- 스마트 근무여정 프로세스 및 핵심도구 활용 영역 -->
+                    <div class="service-process-area content-tt">
+                        <div class="content-tt-in">
+                            <h2 class="service-process-area-tit">스마트 근무여정 프로세스 및 핵심도구 활용</h2>
+                        </div>
+                        <!-- 모바일 이미지 -->
+                        <div class="service-process-area-m">
+                                <img src="./images/process-area-m-img.png" alt="유니포스트 프로세스 및 핵심도구 활용 이미지">
+                            </div>
+                        <div class="service-process-area-wrap">
+                            <!-- 프로세스 이미지 영역 -->
+                            <div class="uni-SaaS-process-area">
+                                <div class="process-tit">
+                                    <img src="./images/process-title-img.png" alt="유니포스트 프로세스 타이틀 이미지">
+                                </div>
+                                <div class="process-img">
+                                    <img src="./images/process-img.png" alt="유니포스트 프로세스 이미지">
+                                </div>
+                            </div>
+                            <!-- 시스템 이미지 영역 -->
+                            <div class="uni-SaaS-system-area">
+                                <!-- 도구 -->
+                                <div class="uni-sys-tool">
+                                    <img src="./images/sys-tool-img.png" alt="유니포스트 시스템 이미지">
+                                    <div class="btn-sys-set-open on">
+                                        <a href="">시스템 설정</a>
+                                    </div>
+                                    <!-- 시스템 설정 오픈 -->
+                                    <div class="uni-sys-setting on">
+                                        <img src="./images/sys-setting-open-img.png" alt="유니포스트 사용자 설정 이미지">
+                                    </div>
+                                </div>
+                                <!-- 서비스 메뉴 -->
+                                <div class="uni-svcmenu-connection">
+                                    <img src="./images/sys-menu-img.png" alt="유니포스트 서비스 메뉴 이미지">
+                                </div>
+                            </div>
+                            <p class="sys-s-title">스마트 근무여정 핵심도구, <span class="sys-b-title">유니포스트!</span></p>
+                        </div>
+                        
+                    </div>
+
+
                     <!-- 서비스소개 이용요금 영역 -->
                     <div class="svc-charge-area">
                         <div class="content-in-sub-tit-area">
